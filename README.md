@@ -8,6 +8,15 @@ This demo shows how the [Moondream](https://www.moondream.ai/) VLM can analyze l
 - Pair free-form prompts with secondary trigger checks so the UI can raise notifications ("Smiling detected", "Thumbs up", etc.) when particular answers come back.
 - Showcase how to wire Moondream into a modern frontend stack with responsive overlays, local persistence for custom triggers, and graceful error handling.
 
+## ✨ Features
+
+- 🎥 **Real-time webcam/video analysis** - Stream from your camera or upload a video
+- 💬 **Live visual summaries** - Continuous narration with custom prompts
+- 🎯 **Gesture detection** - Pre-defined triggers (smiling, thumbs up, peace sign, etc.)
+- ⚡ **Custom triggers** - Create your own action detectors
+- 🖥️ **Fullscreen support** - Immersive viewing experience
+- 💾 **Persistent storage** - Custom triggers saved in browser
+
 ## Run It Locally
 
 1. **Install dependencies**
