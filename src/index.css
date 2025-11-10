@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: 'Geist Sans', system-ui, sans-serif;
+  color: #ffffff;
+  background-color: #020202;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: radial-gradient(circle at top, rgba(255, 255, 255, 0.08), transparent 50%), #020202;
+  color: #ffffff;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.white-caret svg {
+  color: white !important;
+  opacity: 1 !important;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
